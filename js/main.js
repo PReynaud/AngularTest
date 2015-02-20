@@ -8,6 +8,9 @@ var MyApp = angular.module('MyApp', [
 MyApp.config(['$routeProvider', 
 	function($routeProvider) {
 		$routeProvider
+			.when('/', {
+				templateUrl: 'mainPage.html'
+			})
 			.when('/add', {
 				templateUrl: 'addTasks.html',
 				controller: 'AddTaskController'

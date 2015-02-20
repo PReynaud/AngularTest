@@ -4,28 +4,42 @@
         <meta charset="utf-8" />
         <title>New tasks</title>        
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="js/angular.js"></script>
         <script src="js/angular-route.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body ng-app="MyApp">
-        <header> 
-            <h1>Truc a faire</h1>
-            <h2>Menu à placer</h2>
-            <a href="/">Accueil</a>
-            <a href="#/add">Ajouter</a>
-            <a href="#/show">Montrer</a>
-        </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div id="view-container">
-            <div ng-view></div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">AngularApp project</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Accueil</a></li>
+              <li><a href="#/add">Ajouter</a></li>
+              <li><a href="#/show">Afficher</a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+        <div class="row">
+            <div id="view-container">
+                <div ng-view></div>
+            </div>
+        </div>
+
     </body>
 </html>
