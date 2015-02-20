@@ -1,0 +1,24 @@
+{
+  "name": "AngularApp",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre Reynaud",
+  "license": "ISC",
+  "homepage": "https://github.com/drodarie/Polyenco",
+  "devDependencies": {
+    "angular": "^1.3.13",
+    "angular-route": "^1.3.13",
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-livereload": "^3.7.0",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^1.1.1",
+    "st": "^0.5.3"
+  }
+}

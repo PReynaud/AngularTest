@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>New tasks</title>        
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body ng-app="MyApp">
+        <header> 
+            <h1>Truc a faire</h1>
+            <h2>Menu à placer</h2>
+            <a href="/">Accueil</a>
+            <a href="#/add">Ajouter</a>
+            <a href="#/show">Montrer</a>
+        </header>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div id="view-container">
+            <div ng-view></div>
+        </div>
+    </body>
+</html>
