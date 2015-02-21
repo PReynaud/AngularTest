@@ -1,7 +1,10 @@
 <div ng-show="tasks.length">
     <ul id="task-list">
         <li ng-repeat="task in tasks">
-            <h4>{{task.name}}</h4>
+            <h4>
+            	{{task.name}}
+            	 <a href="#/show/delete/{{task.id}}"><button>X</button></a>
+            </h4>
         </li>
     </ul>
 </div>

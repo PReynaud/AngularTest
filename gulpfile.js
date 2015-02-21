@@ -1,11 +1,11 @@
-var gulp = require("gulp")
+var gulp = require("gulp"),
 	minifyCSS = require("gulp-minify-css"),
 	uglify = require("gulp-uglify"),
 	useref = require("gulp-useref"),
 	plumber = require("gulp-plumber"),
 	livereload = require("gulp-livereload"),
 	sourcemaps = require("gulp-sourcemaps"),
-	clean = require("gulp-clean")
+	clean = require("gulp-clean"),
 	http = require("http"),
 	st = require("st");
 
